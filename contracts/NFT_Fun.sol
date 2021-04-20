@@ -1084,7 +1084,7 @@ abstract contract ApproveAndCallFallBack {
  *  EIP712 
  *
  */
-contract DigitalNFT is
+contract NFT_Fun is
   NFTokenMetadata 
 {
   uint public tokensMinted; //NFT minted count
@@ -1095,8 +1095,8 @@ contract DigitalNFT is
   {
      
       
-    nftName = "Deploy.Art";
-    nftSymbol = "D.ART";
+    nftName = "NFT.FUN";
+    nftSymbol = "FUN";
     
   }
   
