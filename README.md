@@ -233,7 +233,8 @@ https://kovan-l2-explorer.surge.sh/#
 
 Change network config in hardhat.config.js: 
 
-```       {
+```       
+          { 
               url: 'https://kovan.optimism.io/',
               accounts: {
                 mnemonic: 'test test test test test test test test test test test junk'
