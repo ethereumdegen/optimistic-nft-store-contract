@@ -225,21 +225,23 @@ Now you'll see this in your terminal:
 
 ![deploy on ovm](./assets/deploy-ovm.png)
 
-And uh... yeah.
-That's pretty much it.
-Contracts deployed!
-Tutorial complete.
-Hopefully now you know the basics of working with Optimistic Ethereum.
 
-The primary goal of this tutorial was to try to highlight the similarities between the process of working with Ethereum and of working with Optimistic Ethereum.
-Did we do a decent job?
-Could this tutorial be improved?
-Please let us know by creating an issue on GitHub or by leaving a message over on [discord](https://discord.com/invite/jrnFEvq).
+#### Kovan Optimism Chain Explorer 
 
-Want to try deploying contracts to the Optimistic Ethereum testnet next?
-[Check out the full integration guide](https://community.optimism.io/docs/developers/integration.html) on the Optimism community hub.
+https://kovan-l2-explorer.surge.sh/#
 
 
-## Until next time...
-
-![optimism-tutorial-completion](https://user-images.githubusercontent.com/37757724/113066106-96189680-917f-11eb-9580-69eb71c31b83.gif)
+Change network config in hardhat.config.js: 
+    ...
+    optimism: {
+          url: 'https://kovan.optimism.io/',
+          accounts: {
+            mnemonic: 'test test test test test test test test test test test junk'
+          },
+          // This sets the gas price to 0 for all transactions on L2. We do this
+          // because account balances are not automatically initiated with an ETH
+          // balance (yet, sorry!).
+          gasPrice: 0,
+          ovm: true // This sets the network as using the ovm and ensure contract will be compiled against that.
+        }
+    ...
