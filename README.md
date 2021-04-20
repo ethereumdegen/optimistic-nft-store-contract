@@ -251,3 +251,8 @@ Change network config in hardhat.config.js:
 Sample deployment tx on kovan : 
 0x2b3e6fa11ce07ef83f61a49bcb162f8e74a9c1dc6ad9f86d4b18fc68c54e9360
  
+
+
+#### Canonical Kovan Contracts for Optimism + Kovan 
+https://github.com/ethereum-optimism/optimism/blob/master/packages/contracts/addresses.md
+
