@@ -246,4 +246,8 @@ Change network config in hardhat.config.js:
               ovm: true // This sets the network as using the ovm and ensure contract will be compiled against that.
            }
 ```
+
+
+Sample deployment tx on kovan : 
+0x2b3e6fa11ce07ef83f61a49bcb162f8e74a9c1dc6ad9f86d4b18fc68c54e9360
  
