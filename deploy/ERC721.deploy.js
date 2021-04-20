@@ -4,17 +4,17 @@ const func = async (hre) => {
   const { deploy } = deployments
   const { deployer } = await getNamedAccounts()
 
-  //const initialSupply = 1000000
-  //const name = 'My Optimistic Token'
+  const initialSupply = 1000000
+  const name = 'My Optimistic Token'
 
-  await deploy('NFT_Fun', {
+  await deploy('ERC20', {
     from: deployer,
-    args: [ ],
+    args: [initialSupply, name],
     gasPrice: hre.ethers.BigNumber.from('0'),
     gasLimit: 8999999,
     log: true
   })
 }
 
-func.tags = ['NFT_Fun']
+func.tags = ['ERC20']
 module.exports = func
