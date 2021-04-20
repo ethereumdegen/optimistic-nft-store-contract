@@ -232,9 +232,8 @@ https://kovan-l2-explorer.surge.sh/#
 
 
 Change network config in hardhat.config.js: 
-        ```...
-        optimism: {
-              url: 'https://kovan.optimism.io/',
+
+```      url: 'https://kovan.optimism.io/',
               accounts: {
                 mnemonic: 'test test test test test test test test test test test junk'
               },
@@ -244,4 +243,5 @@ Change network config in hardhat.config.js:
               gasPrice: 0,
               ovm: true // This sets the network as using the ovm and ensure contract will be compiled against that.
            }
-        ...```
+```
+ 
